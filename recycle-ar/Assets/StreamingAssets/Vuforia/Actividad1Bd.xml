@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="gumball_3" size="0.200000 0.144206" />
+    <ImageTarget name="gumball_2" size="0.200000 0.127126" />
+    <ImageTarget name="gumball_1" size="0.200000 0.144907" />
+  </Tracking>
+</QCARConfig>
