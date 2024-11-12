@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class TargetManager : MonoBehaviour
@@ -11,6 +12,7 @@ public class TargetManager : MonoBehaviour
     }
 
     public Target target;
+    public TextMeshProUGUI feetbackText;
 
     void Start()
     {
@@ -40,8 +42,31 @@ public class TargetManager : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             Debug.Log("Hiciste clic o tocaste en: " + hit.collider.gameObject.name);
-
-            GameObject clickedObject = hit.collider.gameObject;
+            if (checkName(hit.collider.gameObject.name) == target)
+            {
+                feetbackText.SetText("Its Ok");
+            }
+            else
+            {
+                feetbackText.SetText("Mistake");
+            }
         }
     }
+
+    private Target checkName(string gameObjectName)
+    {
+        switch (gameObjectName)
+        {
+            case "paeleraAmarilla":
+                return Target.plastico;
+            case "paeleraVerde":
+                return Target.cristal;
+            case "paeleraAzul":
+                return Target.papel;
+            case "paeleraGris":
+                return Target.organico;
+            default:
+                return Target.plastico;
+        }
+    }   
 }
