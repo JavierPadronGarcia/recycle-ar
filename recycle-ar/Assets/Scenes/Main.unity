@@ -236,7 +236,7 @@ Transform:
   m_GameObject: {fileID: 101634254}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.024, z: -0.423}
+  m_LocalPosition: {x: 0, y: 0.024, z: -3.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -386,8 +386,8 @@ GameObject:
   - component: {fileID: 183046288}
   - component: {fileID: 183046287}
   - component: {fileID: 183046286}
-  - component: {fileID: 183046289}
   - component: {fileID: 183046290}
+  - component: {fileID: 183046291}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -454,18 +454,18 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: gumball_1
+  mTrackableName: platano
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Actividad1Bd.xml
-  mAspectRatio: 0.724535
+  mDataSetPath: Vuforia/RecycleAr.xml
+  mAspectRatio: 1
   mImageTargetType: 0
-  mWidth: 0.2
-  mHeight: 0.144907
+  mWidth: 2
+  mHeight: 2
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 183046289}
+  mPreview: {fileID: 183046291}
 --- !u!4 &183046288
 Transform:
   m_ObjectHideFlags: 0
@@ -483,25 +483,6 @@ Transform:
   - {fileID: 1248136078}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &183046289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183046284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 183046287}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: gumball_1
-  mDatasetName: Vuforia/Actividad1Bd.xml
-  mCastedBehaviour: {fileID: 183046287}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &183046290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,6 +496,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: 0
+--- !u!114 &183046291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183046284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 183046287}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: platano
+  mDatasetName: Vuforia/RecycleAr.xml
+  mCastedBehaviour: {fileID: 183046287}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &303457153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,9 +1558,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182960815}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00018543, y: 0.0441, z: -0.0811}
-  m_LocalScale: {x: 0.53154, y: 0.53154, z: 0.53154}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0016097032, y: 0.38282874, z: -0.7040228}
+  m_LocalScale: {x: 4.6142564, y: 4.614257, z: 4.614257}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 684951979}
@@ -1595,9 +1595,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248136077}
-  m_LocalRotation: {x: 0.86013347, y: -0, z: -0, w: 0.510069}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0715}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.8601335, y: -0, z: -0, w: 0.510069}
+  m_LocalPosition: {x: 0, y: 0, z: -0.45834923}
+  m_LocalScale: {x: 8.680921, y: 8.680918, z: 8.680918}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1571384314}
@@ -1606,7 +1606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 118.662994, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.0811}
+  m_AnchoredPosition: {x: 0, y: 0.70402277}
   m_SizeDelta: {x: 0.08, y: 0.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248136079

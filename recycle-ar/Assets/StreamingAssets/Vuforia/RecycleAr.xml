@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="platano" size="2.000000 2.000000" />
+    <ImageTarget name="plastico" size="2.000000 2.000000" />
+    <ImageTarget name="cristal" size="2.000000 2.000000" />
+    <ImageTarget name="carton" size="2.000000 2.000000" />
+  </Tracking>
+</QCARConfig>
