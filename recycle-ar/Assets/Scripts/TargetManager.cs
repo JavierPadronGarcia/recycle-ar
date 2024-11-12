@@ -13,11 +13,9 @@ public class TargetManager : MonoBehaviour
 
     public Target target;
     public TextMeshProUGUI feetbackText;
+    public GameObject papeleras;
 
-    void Start()
-    {
-
-    }
+    public PointsManager points;
 
     void Update()
     {
@@ -45,10 +43,13 @@ public class TargetManager : MonoBehaviour
             if (checkName(hit.collider.gameObject.name) == target)
             {
                 feetbackText.SetText("Its Ok");
+                papeleras.SetActive(false);
+                points.points = points.points + 3;
             }
             else
             {
                 feetbackText.SetText("Mistake");
+                papeleras.SetActive(false);
             }
         }
     }
