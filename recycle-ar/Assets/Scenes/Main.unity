@@ -362,7 +362,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.02, y: 0.02}
+  m_SizeDelta: {x: 0.03, y: 0.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &40282479
 MonoBehaviour:
@@ -442,8 +442,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
+  m_sharedMaterial: {fileID: 8442145305751514969, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -534,7 +534,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &85201650
 GameObject:
@@ -576,8 +576,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
+  m_sharedMaterial: {fileID: 8442145305751514969, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -668,7 +668,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &97443045
 PrefabInstance:
@@ -1066,8 +1066,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
+  m_sharedMaterial: {fileID: 8442145305751514969, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1158,7 +1158,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &183046284
 GameObject:
@@ -1260,7 +1260,7 @@ Transform:
   m_GameObject: {fileID: 183046284}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1677,7 +1677,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.02, y: 0.02}
+  m_SizeDelta: {x: 0.03, y: 0.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &327050359
 MonoBehaviour:
@@ -1961,7 +1961,7 @@ Transform:
   m_GameObject: {fileID: 331082861}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.4067, y: 0, z: 0}
+  m_LocalPosition: {x: -9.525, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1998,7 +1998,7 @@ GameObject:
   m_Component:
   - component: {fileID: 348431385}
   m_Layer: 0
-  m_Name: ----------------------------- (2)
+  m_Name: -----------------------------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2253,8 +2253,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Salir
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3fe2c4c1e84ec6f4bbe28ade8833eeda, type: 2}
+  m_sharedMaterial: {fileID: -296553916903324609, guid: 3fe2c4c1e84ec6f4bbe28ade8833eeda, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2546,7 +2546,7 @@ GameObject:
   - component: {fileID: 522755691}
   - component: {fileID: 522755690}
   - component: {fileID: 522755689}
-  - component: {fileID: 522755688}
+  - component: {fileID: 522755693}
   m_Layer: 0
   m_Name: ImageTargetCristal
   m_TagString: Untagged
@@ -2554,25 +2554,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &522755688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522755687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 522755691}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: cristal
-  mDatasetName: Vuforia/RecycleAr.xml
-  mCastedBehaviour: {fileID: 522755691}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &522755689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2659,7 +2640,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 522755688}
+  mPreview: {fileID: 522755693}
 --- !u!4 &522755692
 Transform:
   m_ObjectHideFlags: 0
@@ -2669,7 +2650,7 @@ Transform:
   m_GameObject: {fileID: 522755687}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -7.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2678,6 +2659,25 @@ Transform:
   - {fileID: 731557354}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &522755693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522755687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 522755691}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: cristal
+  mDatasetName: Vuforia/RecycleAr.xml
+  mCastedBehaviour: {fileID: 522755691}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &524238524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2792,7 +2792,7 @@ GameObject:
   - component: {fileID: 552063791}
   - component: {fileID: 552063790}
   - component: {fileID: 552063789}
-  - component: {fileID: 552063788}
+  - component: {fileID: 552063793}
   m_Layer: 0
   m_Name: ImageTargetPapel
   m_TagString: Untagged
@@ -2800,25 +2800,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &552063788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552063787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 552063791}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: carton
-  mDatasetName: Vuforia/RecycleAr.xml
-  mCastedBehaviour: {fileID: 552063791}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &552063789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2905,7 +2886,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 552063788}
+  mPreview: {fileID: 552063793}
 --- !u!4 &552063792
 Transform:
   m_ObjectHideFlags: 0
@@ -2924,6 +2905,25 @@ Transform:
   - {fileID: 876712493}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &552063793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552063787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 552063791}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: carton
+  mDatasetName: Vuforia/RecycleAr.xml
+  mCastedBehaviour: {fileID: 552063791}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &594352207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,8 +3169,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3fe2c4c1e84ec6f4bbe28ade8833eeda, type: 2}
+  m_sharedMaterial: {fileID: -296553916903324609, guid: 3fe2c4c1e84ec6f4bbe28ade8833eeda, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3194,8 +3194,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3598,7 +3598,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.13, y: 0.04}
+  m_SizeDelta: {x: 0.22, y: 0.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &706834694
 MonoBehaviour:
@@ -3622,8 +3622,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xBFA qu\xE9 papelera corresponde?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
+  m_sharedMaterial: {fileID: 8442145305751514969, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4891,8 +4891,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tutorial
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3fe2c4c1e84ec6f4bbe28ade8833eeda, type: 2}
+  m_sharedMaterial: {fileID: -296553916903324609, guid: 3fe2c4c1e84ec6f4bbe28ade8833eeda, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5149,8 +5149,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
+  m_sharedMaterial: {fileID: 8442145305751514969, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5241,7 +5241,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1300603740
 GameObject:
@@ -5278,7 +5278,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.13, y: 0.04}
+  m_SizeDelta: {x: 0.22, y: 0.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1300603742
 MonoBehaviour:
@@ -5302,8 +5302,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xBFA qu\xE9 papelera corresponde?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
+  m_sharedMaterial: {fileID: 8442145305751514969, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5412,7 +5412,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.02, y: 0.02}
+  m_SizeDelta: {x: 0.03, y: 0.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1302923348
 MonoBehaviour:
@@ -5731,7 +5731,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.02, y: 0.02}
+  m_SizeDelta: {x: 0.03, y: 0.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1571384315
 MonoBehaviour:
@@ -5781,7 +5781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1676103458}
   m_Layer: 0
-  m_Name: ----------------------------- (1)
+  m_Name: -----------------------------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5964,8 +5964,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Continuar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3fe2c4c1e84ec6f4bbe28ade8833eeda, type: 2}
+  m_sharedMaterial: {fileID: -296553916903324609, guid: 3fe2c4c1e84ec6f4bbe28ade8833eeda, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6177,7 +6177,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.13, y: 0.04}
+  m_SizeDelta: {x: 0.22, y: 0.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811228814
 MonoBehaviour:
@@ -6201,8 +6201,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xBFA qu\xE9 papelera corresponde?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
+  m_sharedMaterial: {fileID: 8442145305751514969, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6288,7 +6288,7 @@ GameObject:
   - component: {fileID: 1848687161}
   - component: {fileID: 1848687160}
   - component: {fileID: 1848687159}
-  - component: {fileID: 1848687158}
+  - component: {fileID: 1848687163}
   m_Layer: 0
   m_Name: ImageTargetPlastico
   m_TagString: Untagged
@@ -6296,25 +6296,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1848687158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1848687157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1848687161}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: plastico
-  mDatasetName: Vuforia/RecycleAr.xml
-  mCastedBehaviour: {fileID: 1848687161}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1848687159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6401,7 +6382,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1848687158}
+  mPreview: {fileID: 1848687163}
 --- !u!4 &1848687162
 Transform:
   m_ObjectHideFlags: 0
@@ -6411,7 +6392,7 @@ Transform:
   m_GameObject: {fileID: 1848687157}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6420,6 +6401,25 @@ Transform:
   - {fileID: 16767925}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1848687163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848687157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1848687161}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: plastico
+  mDatasetName: Vuforia/RecycleAr.xml
+  mCastedBehaviour: {fileID: 1848687161}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1880806747
 GameObject:
   m_ObjectHideFlags: 0
@@ -6455,7 +6455,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.13, y: 0.04}
+  m_SizeDelta: {x: 0.22, y: 0.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1880806749
 MonoBehaviour:
@@ -6479,8 +6479,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xBFA qu\xE9 papelera corresponde?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
+  m_sharedMaterial: {fileID: 8442145305751514969, guid: edd3f4564bf50e048bb03baf981b00f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
