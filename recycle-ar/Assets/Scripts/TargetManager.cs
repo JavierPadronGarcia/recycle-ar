@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ public class TargetManager : MonoBehaviour
     public Target target;
     public TextMeshProUGUI feetbackText;
     public GameObject papeleras;
+    public GameObject thisObject;
 
     public PointsManager points;
 
@@ -40,7 +42,12 @@ public class TargetManager : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             Debug.Log("Hiciste clic o tocaste en: " + hit.collider.gameObject.name);
-            if (checkName(hit.collider.gameObject.name) == target)
+            Target hitTarget = checkName(hit.collider.gameObject.name);
+            
+            string patherTarget = hit.collider.gameObject.transform.parent.transform.parent.name;
+            Debug.Log(patherTarget);
+
+            if (hitTarget == target && patherTarget == thisObject.name)
             {
                 feetbackText.SetText("Its Ok");
                 papeleras.SetActive(false);
