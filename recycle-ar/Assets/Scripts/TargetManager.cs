@@ -42,21 +42,21 @@ public class TargetManager : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             Debug.Log("Hiciste clic o tocaste en: " + hit.collider.gameObject.name);
-            Target hitTarget = checkName(hit.collider.gameObject.name);
-            
-            string patherTarget = hit.collider.gameObject.transform.parent.transform.parent.name;
-            Debug.Log(patherTarget);
-
-            if (hitTarget == target && patherTarget == thisObject.name)
+            string mainParentNameHit = hit.collider.gameObject.transform.parent.transform.parent.name;
+            string mainParentName = this.name;
+            if (mainParentNameHit.Equals(mainParentName))
             {
-                feetbackText.SetText("Its Ok");
-                papeleras.SetActive(false);
-                points.points = points.points + 3;
-            }
-            else
-            {
-                feetbackText.SetText("Mistake");
-                papeleras.SetActive(false);
+                if (checkName(hit.collider.gameObject.name) == target)
+                {
+                    feetbackText.SetText("Its Ok");
+                    papeleras.SetActive(false);
+                    points.points = points.points + 3;
+                }
+                else
+                {
+                    feetbackText.SetText("Mistake");
+                    papeleras.SetActive(false);
+                }
             }
         }
     }
