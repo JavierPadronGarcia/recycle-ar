@@ -18,6 +18,9 @@ public class TargetManager : MonoBehaviour
     public GameObject thisObject;
 
     public PointsManager points;
+    public AudioSource audioSource;
+    public AudioClip successClip;
+    public AudioClip mistakeClip;
 
     void Update()
     {
@@ -51,11 +54,21 @@ public class TargetManager : MonoBehaviour
                     feetbackText.SetText("Its Ok");
                     papeleras.SetActive(false);
                     points.points = points.points + 3;
+
+                    if (audioSource != null && successClip != null)
+                    {
+                        audioSource.PlayOneShot(successClip);
+                    }
                 }
                 else
                 {
                     feetbackText.SetText("Mistake");
                     papeleras.SetActive(false);
+
+                    if (audioSource != null && mistakeClip != null)
+                    {
+                        audioSource.PlayOneShot(mistakeClip);
+                    }
                 }
             }
         }
@@ -76,5 +89,5 @@ public class TargetManager : MonoBehaviour
             default:
                 return Target.plastico;
         }
-    }   
+    }
 }
