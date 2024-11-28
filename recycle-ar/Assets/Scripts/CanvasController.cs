@@ -19,4 +19,9 @@ public class CanvasController : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void Collection()
+    {
+        SceneManager.LoadScene("Collection");
+    }
 }
