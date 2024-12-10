@@ -27,6 +27,25 @@ public class CanvasController : MonoBehaviour
 
     public void AR()
     {
+        if (ARManager.instance && ARManager.instance.IsScenarioSaved())
+        {
+            SceneManager.LoadScene("ArGame");
+        }
+        else
+        {
+            SceneManager.LoadScene("Ar");
+        }
+    }
+
+    public void ARModify()
+    {
         SceneManager.LoadScene("Ar");
+    }
+
+    public void ConfirmScenario()
+    {
+        PlaceMultipleObjectsOnPlaneOldInputSystem objectsScript = GameObject.FindGameObjectWithTag("xrorigin").GetComponent<PlaceMultipleObjectsOnPlaneOldInputSystem>();
+        ARManager.instance.SaveScenario(objectsScript.prefabPositions, objectsScript.prefabRotations, objectsScript.prefabList);
+        SceneManager.LoadScene("ArGame");
     }
 }

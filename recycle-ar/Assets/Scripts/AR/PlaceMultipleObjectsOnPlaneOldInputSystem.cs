@@ -36,6 +36,10 @@ public class PlaceMultipleObjectsOnPlaneOldInputSystem : MonoBehaviour
     ARRaycastManager aRRaycastManager;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
+    public List<Vector3> prefabPositions = new List<Vector3>();
+    public List<Quaternion> prefabRotations = new List<Quaternion>();
+    public List<GameObject> prefabList = new List<GameObject>();
+
     void Awake()
     {
         aRRaycastManager = GetComponent<ARRaycastManager>();
@@ -43,30 +47,47 @@ public class PlaceMultipleObjectsOnPlaneOldInputSystem : MonoBehaviour
 
     void Update()
     {
-        // Check if there is existing touch.
-        if (Input.touchCount == 0)
-            return;
 
-        // Store the current touch input.
-        Touch touch = Input.GetTouch(0);
+        // Verificar si hay entrada táctil o de ratón
+        bool isTouchInput = Input.touchCount > 0;
+        bool isMouseInput = Input.GetMouseButtonDown(0);
 
-        // Check if the touch input just touched the screen.
-        if (touch.phase == TouchPhase.Began)
+        Vector2 inputPosition = Vector2.zero;
+
+        // Determinar la posición de la entrada
+        if (isTouchInput)
         {
-            // Check if the raycast hit any trackables.
-            if (aRRaycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
-            {
-                // Raycast hits are sorted by distance, so the first hit means the closest.
-                var hitPose = hits[0].pose;
+            // Obtener la posición táctil
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase != TouchPhase.Began)
+                return;
 
-                // Instantiated the prefab.
-                spawnedObject = Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
-            }
+            inputPosition = touch.position;
+        }
+        else if (isMouseInput && Application.isEditor)
+        {
+            // Usar la posición del ratón para simular un toque en el editor
+            inputPosition = Input.mousePosition;
+        }
+        else
+        {
+            return;
+        }
 
-            // To make the spawned object always look at the camera. Delete if not needed.
-            Vector3 lookPos = Camera.main.transform.position - spawnedObject.transform.position;
-            lookPos.y = 0;
-            spawnedObject.transform.rotation = Quaternion.LookRotation(lookPos);
+        // Realizar el raycast para detectar planos
+        if (aRRaycastManager.Raycast(inputPosition, hits, TrackableType.PlaneWithinPolygon))
+        {
+            // Raycast hits están ordenados por distancia; el primero es el más cercano
+            var hitPose = hits[0].pose;
+
+            // Instanciar el prefab en la posición y rotación detectadas
+            spawnedObject = Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
+
+            // Almacenar los datos del objeto instanciado
+            prefabPositions.Add(hitPose.position);
+            prefabRotations.Add(hitPose.rotation);
+            prefabList.Add(spawnedObject);
         }
     }
+
 }
