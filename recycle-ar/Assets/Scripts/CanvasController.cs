@@ -24,4 +24,9 @@ public class CanvasController : MonoBehaviour
     {
         SceneManager.LoadScene("Collection");
     }
+
+    public void AR()
+    {
+        SceneManager.LoadScene("Ar");
+    }
 }
