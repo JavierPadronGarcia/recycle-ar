@@ -915,9 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57fb33d88f60e8741acfb5caa4e52445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabPositions: []
-  prefabRotations: []
-  prefabList: []
+  placedObjects: []
 --- !u!1 &1892694690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,9 +1309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2045065509}
   - component: {fileID: 2045065508}
-  - component: {fileID: 2045065511}
   - component: {fileID: 2045065510}
-  - component: {fileID: 2045065513}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: xrorigin
@@ -1367,36 +1363,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RaycastPrefab: {fileID: 0}
---- !u!114 &2045065511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045065507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 1735727618083156680, guid: dc63a0f2c47a4134397b3cb36f132f8d, type: 3}
-  m_DetectionMode: -1
---- !u!114 &2045065513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045065507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 519eb90bc2b338d418ab9a452d23f9fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  placedPrefab: {fileID: 5086991699707976545, guid: 8da0c404963eb4e44873f5f66e344a8e, type: 3}
-  prefabPositions: []
-  prefabRotations: []
-  prefabList: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

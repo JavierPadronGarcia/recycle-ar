@@ -1185,6 +1185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1413371088}
   - component: {fileID: 1413371089}
+  - component: {fileID: 1413371090}
   m_Layer: 0
   m_Name: ARGameManager
   m_TagString: Untagged
@@ -1221,6 +1222,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planeManager: {fileID: 2045065511}
   parentTransform: {fileID: 332255567}
+  prefabs:
+  - {fileID: 5086991699707976545, guid: 8da0c404963eb4e44873f5f66e344a8e, type: 3}
+--- !u!114 &1413371090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413371087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81f047133b6fb1468800b1063a5e003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2042325569
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,11 +7,15 @@ public class ARManager : MonoBehaviour
 {
     public static ARManager instance;
 
-    public List<Vector3> prefabPositions = new List<Vector3>();
-    public List<Quaternion> prefabRotations = new List<Quaternion>();
-    public List<GameObject> prefabList = new List<GameObject>();
+    [System.Serializable]
+    public class ObjectData
+    {
+        public Vector3 position;
+        public Quaternion rotation;
+        public string prefabName;
+    }
 
-    bool scenarioSaved = false;
+    public List<ObjectData> placedObjects = new List<ObjectData>();
 
     private void Awake()
     {
@@ -22,17 +26,10 @@ public class ARManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public bool IsScenarioSaved() { return scenarioSaved; }
+    public bool IsScenarioSaved() { return placedObjects.Count != 0; }
 
-    public void SaveScenario(List<Vector3> positions, List<Quaternion> rotations, List<GameObject> objects)
+    public void SaveObjectData(Vector3 position, Quaternion rotation, string prefabName)
     {
-        prefabPositions.Clear();
-        prefabRotations.Clear();
-        prefabList.Clear();
-
-        prefabPositions.AddRange(positions);
-        prefabRotations.AddRange(rotations);
-        prefabList.AddRange(objects);
-        scenarioSaved = true;
+        placedObjects.Add(new ObjectData { position = position, rotation = rotation, prefabName = prefabName });
     }
 }

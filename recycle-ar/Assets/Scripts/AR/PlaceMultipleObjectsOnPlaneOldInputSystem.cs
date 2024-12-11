@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -35,10 +37,6 @@ public class PlaceMultipleObjectsOnPlaneOldInputSystem : MonoBehaviour
 
     ARRaycastManager aRRaycastManager;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
-
-    public List<Vector3> prefabPositions = new List<Vector3>();
-    public List<Quaternion> prefabRotations = new List<Quaternion>();
-    public List<GameObject> prefabList = new List<GameObject>();
 
     void Awake()
     {
@@ -84,9 +82,7 @@ public class PlaceMultipleObjectsOnPlaneOldInputSystem : MonoBehaviour
             spawnedObject = Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
 
             // Almacenar los datos del objeto instanciado
-            prefabPositions.Add(hitPose.position);
-            prefabRotations.Add(hitPose.rotation);
-            prefabList.Add(spawnedObject);
+            ARManager.instance.SaveObjectData(hitPose.position, hitPose.rotation, placedPrefab.name);
         }
     }
 

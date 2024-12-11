@@ -44,8 +44,6 @@ public class CanvasController : MonoBehaviour
 
     public void ConfirmScenario()
     {
-        PlaceMultipleObjectsOnPlaneOldInputSystem objectsScript = GameObject.FindGameObjectWithTag("xrorigin").GetComponent<PlaceMultipleObjectsOnPlaneOldInputSystem>();
-        ARManager.instance.SaveScenario(objectsScript.prefabPositions, objectsScript.prefabRotations, objectsScript.prefabList);
         SceneManager.LoadScene("ArGame");
     }
 }
