@@ -6,8 +6,6 @@ using UnityEngine.XR.ARFoundation;
 
 public class ARGameManager : MonoBehaviour
 {
-    public ARPlaneManager planeManager;
-    public Transform parentTransform;
     public List<GameObject> prefabs;
 
     void Start()

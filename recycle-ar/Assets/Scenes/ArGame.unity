@@ -1220,10 +1220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4227b2ee60574794fb2e9bedff7b6868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planeManager: {fileID: 0}
-  parentTransform: {fileID: 332255567}
   prefabs:
-  - {fileID: 5086991699707976545, guid: 8da0c404963eb4e44873f5f66e344a8e, type: 3}
+  - {fileID: 8840974119949709083, guid: 6868cfbb88e88d04da3970c170cb5bc5, type: 3}
 --- !u!114 &1413371090
 MonoBehaviour:
   m_ObjectHideFlags: 0
