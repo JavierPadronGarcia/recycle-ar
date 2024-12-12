@@ -4,18 +4,28 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using TMPro; // Para usar TMP_Dropdown
 
 [HelpURL("https://youtu.be/HkNVp04GOEI")]
 [RequireComponent(typeof(ARRaycastManager))]
 public class PlaceMultipleObjectsOnPlaneOldInputSystem : MonoBehaviour
 {
     [SerializeField]
-    [Tooltip("Instantiates this prefab on a plane at the touch location.")]
-    GameObject placedPrefab;
+    [Tooltip("List of prefabs available for placement.")]
+    List<GameObject> prefabs;
+
+    [SerializeField]
+    [Tooltip("List of custom labels corresponding to the prefabs.")]
+    List<string> prefabLabels;
+
+    [SerializeField]
+    [Tooltip("TMP Dropdown to select the prefab to place.")]
+    TMP_Dropdown prefabSelector;
 
     GameObject spawnedObject;
     ARRaycastManager aRRaycastManager;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
+    int selectedPrefabIndex = 0;
 
     void Awake()
     {
@@ -24,6 +34,31 @@ public class PlaceMultipleObjectsOnPlaneOldInputSystem : MonoBehaviour
             ARManager.instance.placedObjects.Clear();
         }
         aRRaycastManager = GetComponent<ARRaycastManager>();
+
+        // Configurar el TMP_Dropdown
+        if (prefabSelector != null)
+        {
+            prefabSelector.ClearOptions();
+
+            // Validar que las listas tengan el mismo tamaño
+            if (prefabs.Count != prefabLabels.Count)
+            {
+                Debug.LogError("La cantidad de prefabs y etiquetas no coincide. Por favor, corrige las listas en el inspector.");
+                return;
+            }
+
+            // Agregar las etiquetas personalizadas al TMP_Dropdown
+            prefabSelector.AddOptions(prefabLabels);
+
+            // Escuchar cambios en el TMP_Dropdown
+            prefabSelector.onValueChanged.AddListener(OnPrefabSelected);
+        }
+    }
+
+    void OnPrefabSelected(int index)
+    {
+        // Actualizar el índice del prefab seleccionado
+        selectedPrefabIndex = index;
     }
 
     void Update()
@@ -47,6 +82,9 @@ public class PlaceMultipleObjectsOnPlaneOldInputSystem : MonoBehaviour
         else if (isMouseInput && Application.isEditor)
         {
             inputPosition = Input.mousePosition;
+
+            if (EventSystem.current.IsPointerOverGameObject())
+                return;
         }
         else
         {
@@ -56,6 +94,9 @@ public class PlaceMultipleObjectsOnPlaneOldInputSystem : MonoBehaviour
         if (aRRaycastManager.Raycast(inputPosition, hits, TrackableType.PlaneWithinPolygon))
         {
             var hitPose = hits[0].pose;
+
+            // Obtener el prefab seleccionado
+            GameObject placedPrefab = prefabs[selectedPrefabIndex];
 
             // Usar rotación fija con x = -90 y el resto igual al prefab
             Quaternion fixedRotation = Quaternion.Euler(-90, 0, 0);
