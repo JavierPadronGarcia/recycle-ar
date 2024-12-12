@@ -40,6 +40,10 @@ public class PlaceMultipleObjectsOnPlaneOldInputSystem : MonoBehaviour
 
     void Awake()
     {
+        if (ARManager.instance.IsScenarioSaved())
+        {
+            ARManager.instance.placedObjects.Clear();
+        }
         aRRaycastManager = GetComponent<ARRaycastManager>();
     }
 
